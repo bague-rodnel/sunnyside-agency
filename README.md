@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](git@github.com:bague-rodnel/sunnyside-agency.git)
+- Solution URL: [Github Repo](https://github.com/bague-rodnel/sunnyside-agency)
 - Live Site URL: [Github Pages](https://bague-rodnel.github.io/sunnyside-agency/)
 
 ## My process
