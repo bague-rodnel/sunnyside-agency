@@ -63,6 +63,10 @@ body {
   font-size: 18px;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 /* ============ reusable classes =========== */
 
 .col-img {
