@@ -213,6 +213,7 @@ section {
   top: 100%;
   margin-top: 1rem;
   padding-top: var(--padding-top);
+  padding-bottom: var(--padding-top);
   overflow: hidden;
   user-select: none;
   transition: height var(--delay);
@@ -243,6 +244,7 @@ section {
 
 .dropdownMenu[data-show="false"] {
   height: 0;
+  width: 0;
 }
 
 .dropdownMenu[data-show="false"]::after {
@@ -251,6 +253,11 @@ section {
 
 .dropdownMenu[data-show="true"] {
   height: var(--content-height);
+  width: auto;
+}
+
+.dropdownMenu[data-show="true"] .navbar-menu {
+  box-shadow: 0 0 1rem -0.3rem rgba(0, 0, 0, 0.4);
 }
 
 .navbar-nav {
