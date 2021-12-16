@@ -122,10 +122,12 @@ section {
 }
 
 .img-box {
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  min-height: calc(100vw * var(--bg-img-height) / var(--bg-img-width));
+  min-height: calc(
+    calc(100vw - var(--y-scrollbar-width)) * var(--bg-img-height) /
+      var(--bg-img-width)
+  );
 }
 
 .section-cta {
@@ -208,7 +210,7 @@ section {
   position: absolute;
   left: 0;
   right: 0;
-  top: 4rem;
+  top: 100%;
   margin-top: 1rem;
   padding-top: var(--padding-top);
   overflow: hidden;
@@ -285,7 +287,7 @@ section {
   --bg-img-height: 1076;
   --bg-img-width: 750;
   background-image: url(../images/mobile/image-header.jpg);
-  background-size: cover;
+  width: 100%;
 }
 
 .home__container {
@@ -573,6 +575,9 @@ footer a:hover {
     min-height: calc(50% * var(--bg-img-height) / var(--bg-img-width));
   }
 
+  .transform .content {
+    text-align: left;
+  }
   /* ================ STAND OUT ================= */
   .stand-out {
     display: flex;
@@ -587,6 +592,9 @@ footer a:hover {
     min-height: calc(50% * var(--bg-img-height) / var(--bg-img-width));
   }
 
+  .stand-out .content {
+    text-align: left;
+  }
   /* ============== SERVICES ================ */
   .services {
     display: flex;
