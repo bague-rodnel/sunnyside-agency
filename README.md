@@ -10,7 +10,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
 
 ## Overview
 
@@ -38,9 +37,12 @@ This was coded with Bootstrap 5.1.3. Only the necessary compiled css files have 
 ### Built with
 
 - Semantic HTML5 markup
-- Bootstrap
+- CSS
+- Javascript
 - Mobile-first workflow
 
-### Continued development
+This was first coded with Bootstrap 5.1.3. I started over and I stuck with vanilla css for an alternate approach. The section heights are coupled to the image dimensions/aspect ratios.
 
-I felt like this took longer than expected considering I was using Bootstrap. I'm going to redo this with pure css for a change in another branch
+The tricky bit was the css vw unit which includes the vertical scrollbar width. The Javascript code queries the browser's scrollbar width and injects it to the :root as a helper variable for subsequent css calculations.
+
+As a result, when viewed starting from the browser's maximized window (with scrollbar) and then emulating a smaller screen (devtools?) the scrollbar width breaks layout dimension computations for 992px and above. Reloading the page at the same emulated screen size results in a 0px scrollbar width
