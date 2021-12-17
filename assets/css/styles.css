@@ -708,17 +708,6 @@ footer a:hover {
     --container-max-w: 1320px;
   }
 
-  /* section::before,
-  section::after {
-    content: " ";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    bottom: 0;
-    z-index: -2;
-  } */
-
   .img-box {
     height: calc(
       calc(var(--max-breakpoint) / 2) * var(--bg-img-height) /
@@ -793,18 +782,6 @@ footer a:hover {
     flex-shrink: 1;
     flex-basis: calc(100vw / 2);
   }
-
-  /* .services::before {
-    right: 50%;
-    width: 50%;
-    background-image: url(../images/desktop/large/bg/image-graphic-design.jpg);
-  }
-
-  .services::after {
-    left: 50%;
-    width: 50%;
-    background-image: url(../images/desktop/large/bg/image-photography.jpg);
-  } */
 
   .services .img-box {
     width: calc(var(--max-breakpoint) / 2);
