@@ -6,7 +6,6 @@ window.onbeforeunload = function () {
 
 // ============== INJECT Y SCROLLBAR WIDTH TO CSS VAR FOR LATER ==============
 let scrollbarWidth = (window.innerWidth - document.body.clientWidth) + 'px';
-console.log(scrollbarWidth)
 document.documentElement.style.setProperty("--y-scrollbar-width", scrollbarWidth);
 
 // ============ NAVBAR POP ON SCROLL =============

@@ -649,7 +649,7 @@ footer a:hover {
 
   .img-box {
     height: calc(
-      var(--half-section) / 2 * var(--bg-img-height) / var(--bg-img-width)
+      var(--half-section) * var(--bg-img-height) / var(--bg-img-width)
     );
   }
 
